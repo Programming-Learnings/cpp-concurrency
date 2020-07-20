@@ -1,5 +1,5 @@
 #include <iostream>
-#include <threads>
+#include <thread>
 
 void hello()
 {
@@ -8,5 +8,6 @@ void hello()
 int main()
 {
     std::thread t(hello);
-    std::cout << "Hello from the first thread" : t.join()
+    std::cout << "Hello from the first thread";
+    t.join();
 }
